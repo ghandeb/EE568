@@ -1,0 +1,29 @@
+Circuit_begin
+  Y_circuit
+    9165
+    9165
+  matrixStrandI
+    CircuitMatrix_begin
+      Current_source_last 0
+      Current_source 0
+      Y2
+        1
+        0
+      Y3
+        0
+      B_Y2
+        0
+      I_loop
+        1
+        0
+      I_branch
+        1
+        0
+      Flux
+        1
+        0.061742400012275044929
+      Flux_loop
+        1
+        0
+    CircuitMatrix_end
+Circuit_end

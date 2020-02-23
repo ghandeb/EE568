@@ -1,0 +1,8 @@
+$begin 'CacheDataVersion'
+	DataVersion=11
+$end 'CacheDataVersion'
+$begin 'VariableValues'
+	t_stop='3s'
+	t_step='t_stop/600'
+	angle='90deg'
+$end 'VariableValues'
