@@ -90,8 +90,8 @@ figure;
 plot(rot,Rel_full_rot,'LineWidth',2);
 grid minor;
 xlabel('Rotation Angle (rad)','FontSize',16);
-ylabel('Reluctance (1/H)','FontSize',16);
-ylim([0 5e7]);
+ylabel('Reluctance (H)','FontSize',16);
+ylim([0 1]);
 title('Reluctance of the System','FontSize',16);
 saveas(gcf,'Reluctance_analytical','epsc');
 
