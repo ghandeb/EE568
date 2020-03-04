@@ -18,7 +18,7 @@
 \LoadClass[paper=a4, fontsize=11pt]{scrartcl}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{fourier}
-
+\RequirePackage{tocloft}
 \RequirePackage[english]{babel}		% English language/hyphenation
 \RequirePackage[utf8]{inputenc}     % for non-ascii character support
 %\RequirePackage[protrusion=true,expansion=true]{microtype}	
