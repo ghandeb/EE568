@@ -17,9 +17,9 @@
 
 \section{Introduction}
 
-In this project, a simple variable reluctance motor is analyzed using analytical and numerical techniques. Analytical formulations and their results, which are obtained in MATLAB environment, are compared with finite element analysis (FEA) results. The effects and precision of assumptions made for analytical formulations are compared with non-ideal findings. Furthermore, the effects of linear, non-linear material choices, 2D and 3D modelling differences are discussed.\\
+In this project, a simple variable reluctance motor is going to be analyzed using analytical and numerical techniques. Analytical formulations and their results, which are obtained in MATLAB environment, are going to be compared with finite element analysis (FEA) results. The effects and precision of assumptions made for analytical formulations are going to be compared with non-ideal findings. Furthermore, the effects of linear, non-linear material choices are going to be discussed.\\
 
-All of the models built for analysis of the machine, the results and figures are present in GitHub, and are accessible \href{http://www.github.com/ghandeb/EE568}{in this link}.
+All of the models built for analysis of the machine, the results and figures are present in GitHub, and are accessible \href{http://www.github.com/ghandeb/EE568/tree/master/Project_1}{in this link}.
  
  
 \section{Analytical Calculations}
@@ -274,16 +274,15 @@ To verify this, the coils are excited with pulse current given in Fig. \ref{fig:
 Animations of flux density vectors are obtained in Maxwell 2D environment with transient analysis. They are accessible in the links below:
 
 \begin{itemize}
-\item \href{https://github.com/ghandeb/EE568/blob/master/Project%201/kepce.gif}{in this link}.
-\item \href{http://www.github.com/ghandeb/EE568}{in this link}.
-\item \href{http://www.github.com/ghandeb/EE568}{in this link}.
+\item \href{https://github.com/ghandeb/EE568/blob/master/Project_1/kepce.gif}{Flux lines}.
+\item \href{https://github.com/ghandeb/EE568/blob/master/Project_1/kepce2.gif}{Flux density distribution}.
+\item \href{https://github.com/ghandeb/EE568/blob/master/Project_1/kepce3d.gif}{Flux density distribution in 3D object}.
 \end{itemize}
 
-\newpage
 
 \section{Conclusion}
 
-In this project, a simple variable reluctance motor is analyzed using analytical and numerical techniques. Analytical formulations and their results, which are obtained in MATLAB environment, are compared with finite element analysis (FEA) results. The effects and precision of assumptions made for analytical formulations are compared with non-ideal findings. Furthermore, the effects of linear, non-linear material choices, 2D and 3D modelling differences are discussed.
+In this project, a simple variable reluctance motor is analyzed using analytical and numerical techniques. The effects of linear, non-linear material choices are discussed.
 
 
 \newpage 
