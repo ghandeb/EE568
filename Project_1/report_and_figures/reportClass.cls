@@ -32,9 +32,11 @@
 \RequirePackage{svg}
 \RequirePackage{caption}
 \RequirePackage{subcaption}
-
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{calrsfs}
 \graphicspath{Figures}
 \RequirePackage{url}
+\RequirePackage{hyperref}
 
 %%% Custom sectioning
 \RequirePackage{sectsty}
