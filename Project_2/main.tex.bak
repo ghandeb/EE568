@@ -1,0 +1,173 @@
+\documentclass{reportClass}
+
+\title{Motor Winding Design and Analysis}
+\author{G\"{o}ksenin Hande Bayazıt}
+%\date{January 2019}
+\universityName{Middle East Technical University}
+\departmentName{Department of Electrical and Electronics Engineering}
+\className{EE568 - Selected Topics on Electrical Machines}
+\reportName{Project \#2 Report}
+
+\begin{document}
+\printtitle
+
+%\tableofcontents
+
+%\newpage
+
+\section{Introduction}
+lollollol
+\section{Integral-Slot Winding Design}
+lelellelelelelelele
+\subsection{Single Layer}
+ biyron tablo\\
+ 
+\begin{table}[h!] \centering
+\begin{tabular}{|c|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Slot & 1                           & 2                           & 3                           & 4                           & 5                           & 6                           & 7                           & 8                           & 9                           & 10                          & 11                          & 12                          \\ \hline
+Layer 1 & \cellcolor[HTML]{FCFF2F}A1+ & \cellcolor[HTML]{FCFF2F}A2+ & \cellcolor[HTML]{CBCEFB}C1- & \cellcolor[HTML]{CBCEFB}C2- & \cellcolor[HTML]{90E3FB}B1+ & \cellcolor[HTML]{90E3FB}B2+ & \cellcolor[HTML]{FFFE65}A1- & \cellcolor[HTML]{FFFE65}A2- & \cellcolor[HTML]{CBCEFB}C1+ & \cellcolor[HTML]{CBCEFB}C2+ & \cellcolor[HTML]{90E3FB}B1- & \cellcolor[HTML]{90E3FB}B2- \\ \hline
+\end{tabular}
+\end{table}
+
+winding factorler\\
+
+\begin{table}[h!] \centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+   & First & Third  & Fifth \\ \hline
+$k_d$ & 0.966 & 0.707  & 0.259 \\ \hline
+$k_p$ & 1.000 & -1.000 & 1.000 \\ \hline
+$k_w$ & 0.966 & -0.707 & 0.259 \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Double Layer, Full Pitched}
+ yet another tablo\\
+ 
+ \begin{table}[h!] \centering
+\begin{tabular}{|c|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Slot    & 1                           & 2                           & 3                           & 4                           & 5                           & 6                           & 7                           & 8                           & 9                           & 10                          & 11                          & 12                          \\ \hline
+Layer 1 & \cellcolor[HTML]{FCFF2F}A1+ & \cellcolor[HTML]{FCFF2F}A2+ & \cellcolor[HTML]{CBCEFB}C1- & \cellcolor[HTML]{CBCEFB}C2- & \cellcolor[HTML]{90E3FB}B1+ & \cellcolor[HTML]{90E3FB}B2+ & \cellcolor[HTML]{FCFF2F}A3- & \cellcolor[HTML]{FCFF2F}A4- & \cellcolor[HTML]{CBCEFB}C3+ & \cellcolor[HTML]{CBCEFB}C4+ & \cellcolor[HTML]{90E3FB}B3- & \cellcolor[HTML]{90E3FB}B4- \\ \hline
+Layer 2 & \cellcolor[HTML]{FCFF2F}A3+ & \cellcolor[HTML]{FCFF2F}A4+ & \cellcolor[HTML]{CBCEFB}C3- & \cellcolor[HTML]{CBCEFB}C4- & \cellcolor[HTML]{90E3FB}B3+ & \cellcolor[HTML]{90E3FB}B4+ & \cellcolor[HTML]{FCFF2F}A1- & \cellcolor[HTML]{FCFF2F}A2- & \cellcolor[HTML]{CBCEFB}C1+ & \cellcolor[HTML]{CBCEFB}C2+ & \cellcolor[HTML]{90E3FB}B1- & \cellcolor[HTML]{90E3FB}B2- \\ \hline
+\end{tabular}
+\end{table}
+
+winding factorler\\
+
+\begin{table}[h!] \centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+   & First & Third  & Fifth \\ \hline
+$k_d$ & 0.966 & 0.707  & 0.259 \\ \hline
+$k_p$ & 1.000 & -1.000 & 1.000 \\ \hline
+$k_w$ & 0.966 & -0.707 & 0.259 \\ \hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Double Layer, 5/6 Pitched}
+bir tane daha\\
+
+\begin{table}[h!] \centering
+\begin{tabular}{|c|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Slot    & 1                           & 2                           & 3                           & 4                           & 5                           & 6                           & 7                           & 8                           & 9                           & 10                          & 11                          & 12                          \\ \hline
+Layer 1 & \cellcolor[HTML]{FCFF2F}A1+ & \cellcolor[HTML]{FCFF2F}A2+ & \cellcolor[HTML]{CBCEFB}C1- & \cellcolor[HTML]{CBCEFB}C2- & \cellcolor[HTML]{90E3FB}B1+ & \cellcolor[HTML]{90E3FB}B2+ & \cellcolor[HTML]{FCFF2F}A3- & \cellcolor[HTML]{FCFF2F}A4- & \cellcolor[HTML]{CBCEFB}C3+ & \cellcolor[HTML]{CBCEFB}C4+ & \cellcolor[HTML]{90E3FB}B3- & \cellcolor[HTML]{90E3FB}B4- \\ \hline
+Layer 2 & \cellcolor[HTML]{FCFF2F}A4+ & \cellcolor[HTML]{CBCEFB}C3- & \cellcolor[HTML]{CBCEFB}C4- & \cellcolor[HTML]{90E3FB}B3+ & \cellcolor[HTML]{90E3FB}B4+ & \cellcolor[HTML]{FCFF2F}A1- & \cellcolor[HTML]{FCFF2F}A2- & \cellcolor[HTML]{CBCEFB}C1+ & \cellcolor[HTML]{CBCEFB}C2+ & \cellcolor[HTML]{90E3FB}B1- & \cellcolor[HTML]{90E3FB}B2- & \cellcolor[HTML]{FCFF2F}A3+ \\ \hline
+\end{tabular}
+\end{table}
+
+winding factorler\\
+
+\begin{table}[h!] \centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+   & First & Third  & Fifth \\ \hline
+$k_d$ & 0.966 & 0.707  & 0.259 \\ \hline
+$k_p$ & 0.966 & -0.707 & 0.259 \\ \hline
+$k_w$ & 0.933 & -0.500 & 0.067 \\ \hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Double Layer, 4/6 Pitched}
+bi de buraya\\
+
+\begin{table}[h!] \centering
+\begin{tabular}{|c|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Slot    & 1                           & 2                           & 3                           & 4                           & 5                           & 6                           & 7                           & 8                           & 9                           & 10                          & 11                          & 12                          \\ \hline
+Layer 1 & \cellcolor[HTML]{FCFF2F}A1+ & \cellcolor[HTML]{FCFF2F}A2+ & \cellcolor[HTML]{CBCEFB}C1- & \cellcolor[HTML]{CBCEFB}C2- & \cellcolor[HTML]{90E3FB}B1+ & \cellcolor[HTML]{90E3FB}B2+ & \cellcolor[HTML]{FCFF2F}A3- & \cellcolor[HTML]{FCFF2F}A4- & \cellcolor[HTML]{CBCEFB}C3+ & \cellcolor[HTML]{CBCEFB}C4+ & \cellcolor[HTML]{90E3FB}B3- & \cellcolor[HTML]{90E3FB}B4- \\ \hline
+Layer 2 & \cellcolor[HTML]{CBCEFB}C3- & \cellcolor[HTML]{CBCEFB}C4- & \cellcolor[HTML]{90E3FB}B3+ & \cellcolor[HTML]{90E3FB}B4+ & \cellcolor[HTML]{FCFF2F}A1- & \cellcolor[HTML]{FCFF2F}A2- & \cellcolor[HTML]{CBCEFB}C1+ & \cellcolor[HTML]{CBCEFB}C2+ & \cellcolor[HTML]{90E3FB}B1- & \cellcolor[HTML]{90E3FB}B2- & \cellcolor[HTML]{FCFF2F}A3+ & \cellcolor[HTML]{FCFF2F}A4+ \\ \hline
+\end{tabular}
+\end{table}
+
+winding factorler\\
+
+\begin{table}[h!] \centering \centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+   & First & Third & Fifth  \\ \hline
+$k_d$ & 0.966 & 0.707 & 0.259  \\ \hline
+$k_p$ & 0.866 & 0.000 & -0.866 \\ \hline
+$k_w$ & 0.837 & 0.000 & -0.224 \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Fractional-Slot Winding Design}
+
+\subsection{24 Slots, 22 Poles}
+
+tablo geliyor\\
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|cllllllllllll|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Slot}}    & \multicolumn{1}{l|}{\textbf{1}}                          & \multicolumn{1}{l|}{\textbf{2}}                          & \multicolumn{1}{l|}{\textbf{3}}                          & \multicolumn{1}{l|}{\textbf{4}}                          & \multicolumn{1}{l|}{\textbf{5}}                          & \multicolumn{1}{l|}{\textbf{6}}                          & \multicolumn{1}{l|}{\textbf{7}}                          & \multicolumn{1}{l|}{\textbf{8}}                          & \multicolumn{1}{l|}{\textbf{9}}                          & \multicolumn{1}{l|}{\textbf{10}}                         & \multicolumn{1}{l|}{\textbf{11}}                         & \textbf{12}                         \\ \hline
+\multicolumn{1}{|c|}{\textbf{Forward}} & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{165}                                 & \multicolumn{1}{l|}{330}                                 & \multicolumn{1}{l|}{135}                                 & \multicolumn{1}{l|}{300}                                 & \multicolumn{1}{l|}{105}                                 & \multicolumn{1}{l|}{270}                                 & \multicolumn{1}{l|}{75}                                  & \multicolumn{1}{l|}{240}                                 & \multicolumn{1}{l|}{45}                                  & \multicolumn{1}{l|}{210}                                 & 15                                  \\ \hline
+\multicolumn{1}{|c|}{\textbf{Reverse}} & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{345}                                 & \multicolumn{1}{l|}{150}                                 & \multicolumn{1}{l|}{315}                                 & \multicolumn{1}{l|}{120}                                 & \multicolumn{1}{l|}{285}                                 & \multicolumn{1}{l|}{90}                                  & \multicolumn{1}{l|}{255}                                 & \multicolumn{1}{l|}{60}                                  & \multicolumn{1}{l|}{225}                                 & \multicolumn{1}{l|}{30}                                  & 195                                 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Third}}   & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{135}                                 & \multicolumn{1}{l|}{270}                                 & \multicolumn{1}{l|}{45}                                  & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{315}                                 & \multicolumn{1}{l|}{90}                                  & \multicolumn{1}{l|}{225}                                 & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{135}                                 & \multicolumn{1}{l|}{270}                                 & 45                                  \\ \hline
+\multicolumn{1}{|c|}{\textbf{Fifth}}   & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{105}                                 & \multicolumn{1}{l|}{210}                                 & \multicolumn{1}{l|}{315}                                 & \multicolumn{1}{l|}{60}                                  & \multicolumn{1}{l|}{165}                                 & \multicolumn{1}{l|}{270}                                 & \multicolumn{1}{l|}{15}                                  & \multicolumn{1}{l|}{120}                                 & \multicolumn{1}{l|}{225}                                 & \multicolumn{1}{l|}{330}                                 & 75                                  \\ \hline
+\multicolumn{1}{|c|}{\textbf{Phase}}   & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B+}} & \cellcolor[HTML]{90E3FB}\textbf{B-} \\ \hline
+\textbf{}                              &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                     \\ \hline
+\multicolumn{1}{|c|}{\textbf{Slot}}    & \multicolumn{1}{l|}{\textbf{13}}                         & \multicolumn{1}{l|}{\textbf{14}}                         & \multicolumn{1}{l|}{\textbf{15}}                         & \multicolumn{1}{l|}{\textbf{16}}                         & \multicolumn{1}{l|}{\textbf{17}}                         & \multicolumn{1}{l|}{\textbf{18}}                         & \multicolumn{1}{l|}{\textbf{19}}                         & \multicolumn{1}{l|}{\textbf{20}}                         & \multicolumn{1}{l|}{\textbf{21}}                         & \multicolumn{1}{l|}{\textbf{22}}                         & \multicolumn{1}{l|}{\textbf{23}}                         & \textbf{24}                         \\ \hline
+\multicolumn{1}{|c|}{\textbf{Forward}} & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{345}                                 & \multicolumn{1}{l|}{150}                                 & \multicolumn{1}{l|}{315}                                 & \multicolumn{1}{l|}{120}                                 & \multicolumn{1}{l|}{285}                                 & \multicolumn{1}{l|}{90}                                  & \multicolumn{1}{l|}{255}                                 & \multicolumn{1}{l|}{60}                                  & \multicolumn{1}{l|}{225}                                 & \multicolumn{1}{l|}{30}                                  & 195                                 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Reverse}} & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{165}                                 & \multicolumn{1}{l|}{330}                                 & \multicolumn{1}{l|}{135}                                 & \multicolumn{1}{l|}{300}                                 & \multicolumn{1}{l|}{105}                                 & \multicolumn{1}{l|}{270}                                 & \multicolumn{1}{l|}{75}                                  & \multicolumn{1}{l|}{240}                                 & \multicolumn{1}{l|}{45}                                  & \multicolumn{1}{l|}{210}                                 & 15                                  \\ \hline
+\multicolumn{1}{|c|}{\textbf{Third}}   & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{315}                                 & \multicolumn{1}{l|}{90}                                  & \multicolumn{1}{l|}{225}                                 & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{135}                                 & \multicolumn{1}{l|}{270}                                 & \multicolumn{1}{l|}{45}                                  & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{315}                                 & \multicolumn{1}{l|}{90}                                  & 225                                 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Fifth}}   & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{285}                                 & \multicolumn{1}{l|}{30}                                  & \multicolumn{1}{l|}{135}                                 & \multicolumn{1}{l|}{240}                                 & \multicolumn{1}{l|}{345}                                 & \multicolumn{1}{l|}{90}                                  & \multicolumn{1}{l|}{195}                                 & \multicolumn{1}{l|}{300}                                 & \multicolumn{1}{l|}{45}                                  & \multicolumn{1}{l|}{150}                                 & 255                                 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Phase}}   & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B-}} & \cellcolor[HTML]{90E3FB}\textbf{B+} \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{30 Slots, 22 Poles}
+
+bir tablo da buraya geliyor\\
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|clllllllllllllll|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Slot}}    & \multicolumn{1}{l|}{\textbf{1}}                          & \multicolumn{1}{l|}{\textbf{2}}                          & \multicolumn{1}{l|}{\textbf{3}}                          & \multicolumn{1}{l|}{\textbf{4}}                          & \multicolumn{1}{l|}{\textbf{5}}                          & \multicolumn{1}{l|}{\textbf{6}}                          & \multicolumn{1}{l|}{\textbf{7}}                          & \multicolumn{1}{l|}{\textbf{8}}                          & \multicolumn{1}{l|}{\textbf{9}}                          & \multicolumn{1}{l|}{\textbf{10}}                         & \multicolumn{1}{l|}{\textbf{11}}                         & \multicolumn{1}{l|}{\textbf{12}}                         & \multicolumn{1}{l|}{\textbf{13}}                         & \multicolumn{1}{l|}{\textbf{14}}                         & \textbf{15}                         \\ \hline
+\multicolumn{1}{|c|}{\textbf{Forward}} & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{132}                                 & \multicolumn{1}{l|}{264}                                 & \multicolumn{1}{l|}{36}                                  & \multicolumn{1}{l|}{168}                                 & \multicolumn{1}{l|}{300}                                 & \multicolumn{1}{l|}{72}                                  & \multicolumn{1}{l|}{204}                                 & \multicolumn{1}{l|}{336}                                 & \multicolumn{1}{l|}{108}                                 & \multicolumn{1}{l|}{240}                                 & \multicolumn{1}{l|}{12}                                  & \multicolumn{1}{l|}{144}                                 & \multicolumn{1}{l|}{276}                                 & 48                                  \\ \hline
+\multicolumn{1}{|c|}{\textbf{Reverse}} & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{312}                                 & \multicolumn{1}{l|}{84}                                  & \multicolumn{1}{l|}{216}                                 & \multicolumn{1}{l|}{348}                                 & \multicolumn{1}{l|}{120}                                 & \multicolumn{1}{l|}{252}                                 & \multicolumn{1}{l|}{24}                                  & \multicolumn{1}{l|}{156}                                 & \multicolumn{1}{l|}{288}                                 & \multicolumn{1}{l|}{60}                                  & \multicolumn{1}{l|}{192}                                 & \multicolumn{1}{l|}{324}                                 & \multicolumn{1}{l|}{96}                                  & 228                                 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Third}}   & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{36}                                  & \multicolumn{1}{l|}{72}                                  & \multicolumn{1}{l|}{108}                                 & \multicolumn{1}{l|}{144}                                 & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{216}                                 & \multicolumn{1}{l|}{252}                                 & \multicolumn{1}{l|}{288}                                 & \multicolumn{1}{l|}{324}                                 & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{36}                                  & \multicolumn{1}{l|}{72}                                  & \multicolumn{1}{l|}{108}                                 & 144                                 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Fifth}}   & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{300}                                 & \multicolumn{1}{l|}{240}                                 & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{120}                                 & \multicolumn{1}{l|}{60}                                  & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{300}                                 & \multicolumn{1}{l|}{240}                                 & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{120}                                 & \multicolumn{1}{l|}{60}                                  & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{300}                                 & 240                                 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Phase}}   & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C-}} & \cellcolor[HTML]{90E3FB}\textbf{B-} \\ \hline
+\textbf{}                              &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                                          &                                     \\ \hline
+\multicolumn{1}{|c|}{\textbf{Slot}}    & \multicolumn{1}{l|}{\textbf{16}}                         & \multicolumn{1}{l|}{\textbf{17}}                         & \multicolumn{1}{l|}{\textbf{18}}                         & \multicolumn{1}{l|}{\textbf{19}}                         & \multicolumn{1}{l|}{\textbf{20}}                         & \multicolumn{1}{l|}{\textbf{21}}                         & \multicolumn{1}{l|}{\textbf{22}}                         & \multicolumn{1}{l|}{\textbf{23}}                         & \multicolumn{1}{l|}{\textbf{24}}                         & \multicolumn{1}{l|}{\textbf{25}}                         & \multicolumn{1}{l|}{\textbf{26}}                         & \multicolumn{1}{l|}{\textbf{27}}                         & \multicolumn{1}{l|}{\textbf{28}}                         & \multicolumn{1}{l|}{\textbf{29}}                         & \textbf{30}                         \\ \hline
+\multicolumn{1}{|c|}{\textbf{Forward}} & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{312}                                 & \multicolumn{1}{l|}{84}                                  & \multicolumn{1}{l|}{216}                                 & \multicolumn{1}{l|}{348}                                 & \multicolumn{1}{l|}{120}                                 & \multicolumn{1}{l|}{252}                                 & \multicolumn{1}{l|}{24}                                  & \multicolumn{1}{l|}{156}                                 & \multicolumn{1}{l|}{288}                                 & \multicolumn{1}{l|}{60}                                  & \multicolumn{1}{l|}{192}                                 & \multicolumn{1}{l|}{324}                                 & \multicolumn{1}{l|}{96}                                  & 228                                 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Reverse}} & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{132}                                 & \multicolumn{1}{l|}{264}                                 & \multicolumn{1}{l|}{36}                                  & \multicolumn{1}{l|}{168}                                 & \multicolumn{1}{l|}{300}                                 & \multicolumn{1}{l|}{72}                                  & \multicolumn{1}{l|}{204}                                 & \multicolumn{1}{l|}{336}                                 & \multicolumn{1}{l|}{108}                                 & \multicolumn{1}{l|}{240}                                 & \multicolumn{1}{l|}{12}                                  & \multicolumn{1}{l|}{144}                                 & \multicolumn{1}{l|}{276}                                 & 48                                  \\ \hline
+\multicolumn{1}{|c|}{\textbf{Third}}   & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{216}                                 & \multicolumn{1}{l|}{252}                                 & \multicolumn{1}{l|}{288}                                 & \multicolumn{1}{l|}{324}                                 & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{36}                                  & \multicolumn{1}{l|}{72}                                  & \multicolumn{1}{l|}{108}                                 & \multicolumn{1}{l|}{144}                                 & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{216}                                 & \multicolumn{1}{l|}{252}                                 & \multicolumn{1}{l|}{288}                                 & 324                                 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Fifth}}   & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{120}                                 & \multicolumn{1}{l|}{60}                                  & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{300}                                 & \multicolumn{1}{l|}{240}                                 & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{120}                                 & \multicolumn{1}{l|}{60}                                  & \multicolumn{1}{l|}{0}                                   & \multicolumn{1}{l|}{300}                                 & \multicolumn{1}{l|}{240}                                 & \multicolumn{1}{l|}{180}                                 & \multicolumn{1}{l|}{120}                                 & 60                                  \\ \hline
+\multicolumn{1}{|c|}{\textbf{Phase}}   & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B-}} & \multicolumn{1}{l|}{\cellcolor[HTML]{90E3FB}\textbf{B+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{FCFF2F}\textbf{A+}} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}\textbf{C+}} & \cellcolor[HTML]{90E3FB}\textbf{B+} \\ \hline
+\end{tabular}
+\end{table}
+
+\section{2D FEA Modelling}
+
+\section{Conclusion}
+
+\end{document}
