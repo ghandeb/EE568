@@ -1,0 +1,12 @@
+$begin 'CacheDataVersion'
+	DataVersion=5
+$end 'CacheDataVersion'
+$begin 'VariableValues'
+	stator_slot='24'
+	conductor='80'
+	fractions='1'
+	delta='33.7964425229836deg'
+	conds='80'
+	R1='1.04072954280708ohm'
+	Le1='0.00010440628140142H'
+$end 'VariableValues'
