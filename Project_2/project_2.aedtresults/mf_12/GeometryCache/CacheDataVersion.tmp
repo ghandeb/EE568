@@ -1,10 +1,10 @@
 $begin 'CacheDataVersion'
-	DataVersion=5
+	DataVersion=6
 $end 'CacheDataVersion'
 $begin 'VariableValues'
+	fractions='1'
 	stator_slot='24'
 	conductor='80'
-	fractions='1'
 	delta='33.7964425229836deg'
 	conds='80'
 	R1='1.04072954280708ohm'

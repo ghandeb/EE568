@@ -206,16 +206,46 @@ Phasor diagrams of windings for fundamental, third and fifth order harmonics are
 Following a geometrical approach, the distribution factor can be found as the ratio of the vectoral sum to arithmetic sum of the vectors.
 
 \begin{equation*}
-    k_d(1) = \dfrac{2cos(7.5)+2cos(22.5)}{4}
+    k_d(1) = \dfrac{2cos(7.5)+2cos(22.5)}{4} = 0.956
 \end{equation*}
 
 \begin{equation*}
-    k_d(3) = \dfrac{2cos(22.5)+2cos(67.5)}{4}
+    k_d(3) = \dfrac{2cos(22.5)+2cos(67.5)}{4} = 0.653
 \end{equation*}
 
 \begin{equation*}
-    k_d(5) = \dfrac{cos(37.5)+2cos(112.5)+cos(142.5)}{4}
+    k_d(5) = \dfrac{2cos(37.5)-2cos(67.5)}{4} = 0.205
 \end{equation*}
+
+As each coil is wound in two consecutive slots, coil span becomes $\lambda = \dfrac{22\pi}{24}$. Therefore, pitch factors can be calculated as below:
+
+\begin{equation*}
+    k_p(1) = sin(\dfrac{22\pi}{48}) = 0.991
+\end{equation*}
+
+\begin{equation*}
+    k_p(3) = sin(\dfrac{66\pi}{48}) = -0.924
+\end{equation*}
+
+\begin{equation*}
+    k_p(5) = sin(\dfrac{110\pi}{48}) = 0.793
+\end{equation*}
+
+
+As a result, winding factors can be found as:
+
+\begin{equation*}
+    k_w(1) = k_d(1)\times k_p(1) = 0.947
+\end{equation*}
+
+\begin{equation*}
+    k_w(3) =  k_d(1)\times k_p(1) = -0.603
+\end{equation*}
+
+\begin{equation*}
+    k_w(5) =  k_d(1)\times k_p(1) = 0.163
+\end{equation*}
+
 \subsection{30 Slots, 22 Poles}
 
 
@@ -263,23 +293,59 @@ Phasor diagrams of windings for fundamental, third and fifth order harmonics are
 Following a geometrical approach, the distribution factor can be found as the ratio of the vectoral sum to arithmetic sum of the vectors.
 
 \begin{equation*}
-    k_d(1) = \dfrac{2cos(6)+2cos(18)+1}{5}
+    k_d(1) = \dfrac{2cos(12)+2cos(24)+1}{5} = 0.957
 \end{equation*}
 
 \begin{equation*}
-    k_d(3) = \dfrac{2cos(18)+2cos(54)+1}{5}
+    k_d(3) = \dfrac{2cos(36)+2cos(72)+1}{5} = 0.647
 \end{equation*}
 
 \begin{equation*}
-    k_d(5) = \dfrac{cos(30)+2cos(90)+1+cos(150)}{5}
+    k_d(5) = \dfrac{2cos(60)+2cos(120)+1}{5} = 0.2
 \end{equation*}
-\subsection{30 Slots, 22 Poles}
 
+The coil span becomes $\lambda = \pi$. Therefore, pitch factors can be calculated as below:
+
+\begin{equation*}
+    k_p(1) = sin(\dfrac{\pi}{2}) = 1
+\end{equation*}
+
+\begin{equation*}
+    k_p(3) = sin(\dfrac{3\pi}{2}) = -1
+\end{equation*}
+
+\begin{equation*}
+    k_p(5) = sin(\dfrac{5\pi}{2}) = 1
+\end{equation*}
+
+As a result, winding factors can be found as:
+
+\begin{equation*}
+    k_w(1) = k_d(1)\times k_p(1) = 0.957
+\end{equation*}
+
+\begin{equation*}
+    k_w(3) =  k_d(1)\times k_p(1) = -0.647
+\end{equation*}
+
+\begin{equation*}
+    k_w(5) =  k_d(1)\times k_p(1) = 0.2
+\end{equation*}
+
+\subsection{comments}
+
+By means of winding factor, both designs are feasible. 30/22 has a larger fifth and smaller third harmonic winding factor. As these machines are 3-phase, third order induced voltages will be eliminated in wye connection. Therefore it can be said that the one with smaller higher order harmonic induced voltage components is more preferable. In this sense, 24/22 design is more advantageous than 30/22 design.\\
+
+Also, distribution of the coils in 30/22 design is asymmetric. Each coil will have different span, in case they are placed in the nearest possible slots. If they are placed so that the coil span becomes $\pi$, mean turn length of each coil becomes too large and core loss will increase. Here also, 24/22 design is more advantageous due to symmetric and proper winding distribution and shorter end windings.\\
 
 
 \section{2D FEA Modelling}
 
+For 2D modelling of the two topologies, I took the design and dimensions of IMMD motor as reference, and modified the design as 24/22 and 30/22.\\
+
 \subsection{24 Slots, 22 Poles}
+
+The winding diagram of the design is given in Fig. \ref{fig:wdg24}.\\
 
 \begin{figure}[h!]
     \centering
@@ -287,6 +353,8 @@ Following a geometrical approach, the distribution factor can be found as the ra
     \caption{Winding Diagram}
     \label{fig:wdg24}
 \end{figure}
+
+Air-gap flux density, back EMF and cogging torque waveforms over one electrical period are shown in Fig. \ref{fig:b24}, \ref{fig:bemf24} and \ref{fig:cog24}, respectively.\\
 
 \begin{figure}[h!]
     \centering
@@ -311,12 +379,19 @@ Following a geometrical approach, the distribution factor can be found as the ra
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{30 Slots, 22 Poles}
 
+
+The winding diagram of the design is given in Fig. \ref{fig:wdg30}.\\
+
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\linewidth]{winding30s.png}
     \caption{Winding Diagram}
     \label{fig:wdg30}
 \end{figure}
+
+Air-gap flux density, back EMF and cogging torque waveforms over one electrical period are shown in Fig. \ref{fig:b30}, \ref{fig:bemf30} and \ref{fig:cog30}, respectively.\\
+
 
 \begin{figure}[h!]
     \centering
@@ -339,6 +414,14 @@ Following a geometrical approach, the distribution factor can be found as the ra
     \label{fig:cog30}
 \end{figure}
 
+\subsection{Comments}
+The designs are identical except for total number of turns, number of slots and stator tooth width. Each slot contains equal number of turns, therefore in total, 30/22 design has a larger number of turns. Resultantly, its induced voltage is also larger.\\
+
+Cogging torque of 30/22 design is almost twice as that of 24/22 design. With lower cogging torque, 24/22 is a better solution.\\
+
+
 \section{Conclusion}
+
+In this project, differences between integer and fractional slot windings have been discussed by means of winding factors for different harmonic components. Two different motors with fractional slot concentrated windings have been analyzed using finite element method. Their performances have been compared. 24/22 is concluded to be a better topology than 30/22 due to its lower cogging torque, poorer higher order harmonic content of induced voltage, shorter end winding and lower copper loss.
 
 \end{document}
