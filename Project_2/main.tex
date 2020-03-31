@@ -16,11 +16,43 @@
 %\newpage
 
 \section{Introduction}
-lollollol
+
+In this project, different stator winding topologies will be discussed. The differences between integer and fractional slot windings will be investigated by means of winding factors for different harmonic components. Further, two different motors with fractional slot concentrated windings will be analyzed using finite element method. Their resultant magnetic aspects will be compared.\\
+
 \section{Integral-Slot Winding Design}
-lelellelelelelelele
+
+For the given number of slots, poles and phases, four different windings have been designed. These are:
+
+\begin{itemize}
+    \item Single layer
+    \item Double layer, full pitched
+    \item Double layer, 5/6 pitched
+    \item Double layer, 4/6 pitched
+    
+\end{itemize}
+
+For all these designs, distribution, pitch and winding factors have been calculated using \ref{kd}, \ref{kp} and \ref{kw}, respectively where n is harmonic order, q is number of slots per pole per phase, $\alpha$ is electrical angle between two slots and $\lambda$ is pitch angle of a coil, in radians.
+
+\begin{equation}
+    k_d\,(n) = \dfrac{sin(\dfrac{nq\alpha}{2})}{q\,sin(\dfrac{n\alpha}{2})}  
+\label{kd}
+\end{equation}
+
+\begin{equation}
+    k_p\,(n) = sin(\dfrac{n\lambda}{2})
+    \label{kp}
+\end{equation}
+
+\begin{equation}
+    k_w\,(n) = k_d\,(n)\times k_p\,(n)
+    \label{kw}
+\end{equation}
+
+\newpage
+
 \subsection{Single Layer}
- biyron tablo\\
+
+Winding diagram for one pole pair is given below.
  
 \begin{table}[h!] \centering
 \begin{tabular}{|c|l|l|l|l|l|l|l|l|l|l|l|l|}
@@ -28,9 +60,10 @@ lelellelelelelelele
 Slot & 1                           & 2                           & 3                           & 4                           & 5                           & 6                           & 7                           & 8                           & 9                           & 10                          & 11                          & 12                          \\ \hline
 Layer 1 & \cellcolor[HTML]{FCFF2F}A1+ & \cellcolor[HTML]{FCFF2F}A2+ & \cellcolor[HTML]{CBCEFB}C1- & \cellcolor[HTML]{CBCEFB}C2- & \cellcolor[HTML]{90E3FB}B1+ & \cellcolor[HTML]{90E3FB}B2+ & \cellcolor[HTML]{FFFE65}A1- & \cellcolor[HTML]{FFFE65}A2- & \cellcolor[HTML]{CBCEFB}C1+ & \cellcolor[HTML]{CBCEFB}C2+ & \cellcolor[HTML]{90E3FB}B1- & \cellcolor[HTML]{90E3FB}B2- \\ \hline
 \end{tabular}
+
 \end{table}
 
-winding factorler\\
+Winding factors for this winding topology for first, third and fifth harmonics using \ref{kd}-\ref{kw} are presented on the table below.
 
 \begin{table}[h!] \centering
 \begin{tabular}{|l|l|l|l|}
@@ -43,7 +76,8 @@ $k_w$ & 0.966 & -0.707 & 0.259 \\ \hline
 \end{table}
 
 \subsection{Double Layer, Full Pitched}
- yet another tablo\\
+
+Winding diagram of full-pitched double layer winding for one pole pair is given below.
  
  \begin{table}[h!] \centering
 \begin{tabular}{|c|l|l|l|l|l|l|l|l|l|l|l|l|}
@@ -54,7 +88,8 @@ Layer 2 & \cellcolor[HTML]{FCFF2F}A3+ & \cellcolor[HTML]{FCFF2F}A4+ & \cellcolor
 \end{tabular}
 \end{table}
 
-winding factorler\\
+
+Winding factors for this winding topology for first, third and fifth harmonics using \ref{kd}-\ref{kw} are presented on the table below.
 
 \begin{table}[h!] \centering
 \begin{tabular}{|l|l|l|l|}
@@ -68,7 +103,8 @@ $k_w$ & 0.966 & -0.707 & 0.259 \\ \hline
 
 
 \subsection{Double Layer, 5/6 Pitched}
-bir tane daha\\
+
+Winding diagram of 5/6-pitched double layer winding for one pole pair is given below.
 
 \begin{table}[h!] \centering
 \begin{tabular}{|c|l|l|l|l|l|l|l|l|l|l|l|l|}
@@ -79,7 +115,8 @@ Layer 2 & \cellcolor[HTML]{FCFF2F}A4+ & \cellcolor[HTML]{CBCEFB}C3- & \cellcolor
 \end{tabular}
 \end{table}
 
-winding factorler\\
+
+Winding factors for this winding topology for first, third and fifth harmonics using \ref{kd}-\ref{kw} are presented on the table below.
 
 \begin{table}[h!] \centering
 \begin{tabular}{|l|l|l|l|}
@@ -93,7 +130,9 @@ $k_w$ & 0.933 & -0.500 & 0.067 \\ \hline
 
 
 \subsection{Double Layer, 4/6 Pitched}
-bi de buraya\\
+
+Winding diagram of 4/6-pitched double layer winding for one pole pair is given below.
+
 
 \begin{table}[h!] \centering
 \begin{tabular}{|c|l|l|l|l|l|l|l|l|l|l|l|l|}
@@ -104,7 +143,7 @@ Layer 2 & \cellcolor[HTML]{CBCEFB}C3- & \cellcolor[HTML]{CBCEFB}C4- & \cellcolor
 \end{tabular}
 \end{table}
 
-winding factorler\\
+Winding factors for this winding topology for first, third and fifth harmonics using \ref{kd}-\ref{kw} are presented on the table below.
 
 \begin{table}[h!] \centering \centering
 \begin{tabular}{|l|l|l|l|}
@@ -116,11 +155,17 @@ $k_w$ & 0.837 & 0.000 & -0.224 \\ \hline
 \end{tabular}
 \end{table}
 
+\subsubsection{Comments}
+
+For the first two topologies, there is no difference in electromagnetic point of view, therefore their configurations and winding factors are identical. Short-pitched windings have poorer fundamental winding factor. However, third harmonic component of full-pitched topology is quite high, where in short-pitched equivalents, this is low.\\
+
+4/6-pitched winding is the most feasible topology among all of them. Even if its fundamental winding factor is the lowest, no third order and very little fifth order harmonic voltage is induced in this topology.
+
 \section{Fractional-Slot Winding Design}
 
 \subsection{24 Slots, 22 Poles}
 
-tablo geliyor\\
+Winding diagram of 24 slot - 22 pole fractional slot concentrated winding is given below.
 
 \begin{table}[h!]
 \centering
@@ -142,9 +187,41 @@ tablo geliyor\\
 \end{tabular}
 \end{table}
 
+Phasor diagrams of windings for fundamental, third and fifth order harmonics are given in Fig. \ref{fig:phas24} and \ref{fig:phas243} 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{phasor24.eps}
+    \caption{Phasor diagram of 24/22 winding (fundamental)}
+    \label{fig:phas24}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{phasor243rd.eps}
+    \caption{Phasor diagram of 24/22 winding (third and fifth)}
+    \label{fig:phas243}
+\end{figure}
+
+Following a geometrical approach, the distribution factor can be found as the ratio of the vectoral sum to arithmetic sum of the vectors.
+
+\begin{equation*}
+    k_d(1) = \dfrac{2cos(7.5)+2cos(22.5)}{4}
+\end{equation*}
+
+\begin{equation*}
+    k_d(3) = \dfrac{2cos(22.5)+2cos(67.5)}{4}
+\end{equation*}
+
+\begin{equation*}
+    k_d(5) = \dfrac{cos(37.5)+2cos(112.5)+cos(142.5)}{4}
+\end{equation*}
 \subsection{30 Slots, 22 Poles}
 
-bir tablo da buraya geliyor\\
+
+
+Winding diagram of 30 slot - 22 pole fractional slot concentrated winding is given below.
+
 
 \begin{table}[h!]
 \centering
@@ -166,7 +243,101 @@ bir tablo da buraya geliyor\\
 \end{tabular}
 \end{table}
 
+Phasor diagrams of windings for fundamental, third and fifth order harmonics are given in Fig. \ref{fig:phas30} and \ref{fig:phas303} 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{phasor30.eps}
+    \caption{Phasor diagram of 30/22 winding (fundamental)}
+    \label{fig:phas30}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{phasor303rd.eps}
+
+    \caption{Phasor diagram of 30/22 winding (third and fifth)}
+    \label{fig:phas303}
+\end{figure}
+
+Following a geometrical approach, the distribution factor can be found as the ratio of the vectoral sum to arithmetic sum of the vectors.
+
+\begin{equation*}
+    k_d(1) = \dfrac{2cos(6)+2cos(18)+1}{5}
+\end{equation*}
+
+\begin{equation*}
+    k_d(3) = \dfrac{2cos(18)+2cos(54)+1}{5}
+\end{equation*}
+
+\begin{equation*}
+    k_d(5) = \dfrac{cos(30)+2cos(90)+1+cos(150)}{5}
+\end{equation*}
+\subsection{30 Slots, 22 Poles}
+
+
+
 \section{2D FEA Modelling}
+
+\subsection{24 Slots, 22 Poles}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{winding24s.png}
+    \caption{Winding Diagram}
+    \label{fig:wdg24}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{b24s.png}
+    \caption{Air-Gap Flux Density}
+    \label{fig:b24}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{bemf24s.png}
+    \caption{Induced Voltage}
+    \label{fig:bemf24}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{cogging24s.png}
+    \caption{Cogging Torque}
+    \label{fig:cog24}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{30 Slots, 22 Poles}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{winding30s.png}
+    \caption{Winding Diagram}
+    \label{fig:wdg30}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{b30s.png}
+    \caption{Air-Gap Flux Density}
+    \label{fig:b30}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{bemf30s.png}
+    \caption{Induced Voltage}
+    \label{fig:bemf30}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{cogging30s.png}
+    \caption{Cogging Torque}
+    \label{fig:cog30}
+\end{figure}
 
 \section{Conclusion}
 
