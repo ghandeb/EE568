@@ -1,7 +1,55 @@
 SimValueCacheVersionID=1
 $begin 'SimValueInfos'
-	NextUniqueID=0
+	NextUniqueID=3
 	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='Flux_Lines'
+			ValueState(90, 15, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=1
+		$begin 'SimValueParams'
+			QuantityName='Mag_B'
+			ValueState(103, 16, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=2
+		$begin 'SimValueParams'
+			QuantityName='Area(rotor)'
+			ValueState(235, 35, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
 $end 'SimValueInfos'
 $begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=0
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=79
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=80
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=9
+						SimValueContext(0, 0, 2, 0, false, false, 789, 1, 0, 1, 1, '', 0, 0, 'PC', false, '1001')
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=0
+						$begin 'MinorVVMap'
+							MajorVariation=''
+							MinorCacheFile='min4A7E19884158846520423.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
 $end 'SimValueCache'
