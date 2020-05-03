@@ -1,0 +1,114 @@
+$begin 'InterrogationCache'
+	Version=1
+	$begin 'ValidationStatus'
+		$begin 'Options'
+			EntityCheckLevel='Strict'
+			IgnoreUnclassifiedObjects=false
+			SkipIntersectionChecks=false
+		$end 'Options'
+		Status=false
+	$end 'ValidationStatus'
+	$begin 'BodyCaches'
+		$begin '6'
+			$begin 'Properties'
+				Volume='0'
+				Area='7853.981633974483'
+				Valid=true
+			$end 'Properties'
+			$begin 'BoundingBox'
+				Low[3: -50, -50, 0]
+				High[3: 50, 50, 0]
+				Exact=true
+				Valid=true
+			$end 'BoundingBox'
+		$end '6'
+		$begin '12'
+			$begin 'Properties'
+				Volume='0'
+				Area='10602.875205865552'
+				Valid=true
+			$end 'Properties'
+			$begin 'BoundingBox'
+				Low[3: -80, -80, 0]
+				High[3: 80, 80, 0]
+				Exact=true
+				Valid=true
+			$end 'BoundingBox'
+		$end '12'
+		$begin '306'
+			$begin 'Properties'
+				Volume='0'
+				Area='258.84465991502793'
+				Valid=true
+			$end 'Properties'
+			$begin 'BoundingBox'
+				Low[3: 8.4474611121724692, 8.4474611121724692, 0]
+				High[3: 53.335170392137442, 53.335170392137442, 0]
+				Exact=true
+				Valid=true
+			$end 'BoundingBox'
+		$end '306'
+		$begin '750'
+			$begin 'Properties'
+				Volume='0'
+				Area='258.84465991502793'
+				Valid=true
+			$end 'Properties'
+			$begin 'BoundingBox'
+				Low[3: -53.335170392137442, 8.4474611121724728, 0]
+				High[3: -8.4474611121724656, 53.335170392137442, 0]
+				Exact=true
+				Valid=true
+			$end 'BoundingBox'
+		$end '750'
+		$begin '761'
+			$begin 'Properties'
+				Volume='0'
+				Area='258.84465991502793'
+				Valid=true
+			$end 'Properties'
+			$begin 'BoundingBox'
+				Low[3: -53.335170392137442, -53.335170392137442, -0]
+				High[3: -8.4474611121724763, -8.4474611121724621, 0]
+				Exact=true
+				Valid=true
+			$end 'BoundingBox'
+		$end '761'
+		$begin '772'
+			$begin 'Properties'
+				Volume='0'
+				Area='258.84465991502771'
+				Valid=true
+			$end 'Properties'
+			$begin 'BoundingBox'
+				Low[3: 8.4474611121724585, -53.335170392137442, 0]
+				High[3: 53.335170392137442, -8.4474611121724799, 0]
+				Exact=true
+				Valid=true
+			$end 'BoundingBox'
+		$end '772'
+		$begin '783'
+			$begin 'Properties'
+				Volume='0'
+				Area='45238.93421169302'
+				Valid=true
+			$end 'Properties'
+			$begin 'BoundingBox'
+				Low[3: -120, -120, 0]
+				High[3: 120, 120, 0]
+				Exact=true
+				Valid=true
+			$end 'BoundingBox'
+		$end '783'
+		$begin '789'
+			$begin 'BoundingBox'
+				Low[3: -54.5, 0, 0]
+				High[3: 54.5, 54.5, 0]
+				Exact=true
+				Valid=true
+			$end 'BoundingBox'
+		$end '789'
+	$end 'BodyCaches'
+	$begin 'IntersectionCaches'
+	$end 'IntersectionCaches'
+$end 'InterrogationCache'
